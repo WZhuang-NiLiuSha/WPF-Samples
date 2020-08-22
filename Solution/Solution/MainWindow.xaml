@@ -71,7 +71,7 @@
                     <TranslateTransform></TranslateTransform>
                 </TransformGroup>
             </Grid.RenderTransform>
-            <Border Background="White" Opacity="0.7" CornerRadius="10">
+            <Border Background="White" Opacity="0.7" CornerRadius="10" MouseDown="Grid_MouseDown">
                 <Border.Effect>
                     <DropShadowEffect BlurRadius="20" Color="#dddddd" Opacity="1" ShadowDepth="0"></DropShadowEffect>
                 </Border.Effect>
@@ -126,7 +126,7 @@
 
                 </StackPanel>
             </Grid>
-            <Button x:Name="SignUp" Click="SignUp_Click" Content="SignUp" Width="80" Height="50" Margin="0,60"  Style="{StaticResource MyButtonStyle}" HorizontalAlignment="Right" VerticalAlignment="Top">
+            <Button x:Name="SignUp" Click="SignUp_Click" Content="SignUp" Width="80" Height="50" Margin="0,100"  Style="{StaticResource MyButtonStyle}" HorizontalAlignment="Right" VerticalAlignment="Top">
                 <Button.RenderTransform>
                     <TransformGroup>
                         <ScaleTransform/>
@@ -171,6 +171,11 @@
                                         <LinearDoubleKeyFrame KeyTime="0:0:1" Value="-300"></LinearDoubleKeyFrame>
                                         <LinearDoubleKeyFrame KeyTime="0:0:1.4" Value="-400"></LinearDoubleKeyFrame>
                                         <LinearDoubleKeyFrame KeyTime="0:0:1.7" Value="0"></LinearDoubleKeyFrame>
+                                    </DoubleAnimationUsingKeyFrames>
+                                    <DoubleAnimationUsingKeyFrames Storyboard.TargetName="closeBtn" Storyboard.TargetProperty="Opacity" >
+                                        <LinearDoubleKeyFrame KeyTime="0:0:0" Value="0"></LinearDoubleKeyFrame>
+                                        <LinearDoubleKeyFrame KeyTime="0:0:1.7" Value="0"></LinearDoubleKeyFrame>
+                                        <LinearDoubleKeyFrame KeyTime="0:0:2" Value="1"></LinearDoubleKeyFrame>
                                     </DoubleAnimationUsingKeyFrames>
                                     
                                 </Storyboard>
@@ -233,7 +238,7 @@
 
                 </StackPanel>
             </Grid>
-            <Button x:Name="SignIn" Content="Login" Click="SignIn_Click" Width="80" Height="50" Margin="0,60"  Style="{StaticResource MyButtonStyle}" HorizontalAlignment="Right" VerticalAlignment="Top"
+            <Button x:Name="SignIn" Content="Login" Click="SignIn_Click" Width="80" Height="50" Margin="0,100"  Style="{StaticResource MyButtonStyle}" HorizontalAlignment="Right" VerticalAlignment="Top"
                     Background="White" Foreground="#FFB2044B">
                 <Button.RenderTransform>
                     <TransformGroup>
@@ -276,7 +281,11 @@
                                         <LinearDoubleKeyFrame KeyTime="0:0:1" Value="300"></LinearDoubleKeyFrame>
                                         <LinearDoubleKeyFrame KeyTime="0:0:1.2" Value="0"></LinearDoubleKeyFrame>
                                     </DoubleAnimationUsingKeyFrames>
-
+                                    <DoubleAnimationUsingKeyFrames Storyboard.TargetName="closeBtn" Storyboard.TargetProperty="Opacity" >
+                                        <LinearDoubleKeyFrame KeyTime="0:0:0" Value="0"></LinearDoubleKeyFrame>
+                                        <LinearDoubleKeyFrame KeyTime="0:0:1.7" Value="0"></LinearDoubleKeyFrame>
+                                        <LinearDoubleKeyFrame KeyTime="0:0:2" Value="1"></LinearDoubleKeyFrame>
+                                    </DoubleAnimationUsingKeyFrames>
                                 </Storyboard>
                             </BeginStoryboard>
                         </EventTrigger.Actions>
@@ -284,6 +293,7 @@
                 </Button.Triggers>
             </Button>
         </Grid>
-        
+        <Button x:Name="closeBtn" Content="&#xe61b;" Style="{StaticResource MyButtonStyle}" FontFamily="fonts/#iconfont" VerticalAlignment="Top" HorizontalAlignment="Right"
+                   FontSize="20" Margin="0,60,60,0" Foreground="White" Click="Button_Click"></Button>
     </Grid>
 </Window>

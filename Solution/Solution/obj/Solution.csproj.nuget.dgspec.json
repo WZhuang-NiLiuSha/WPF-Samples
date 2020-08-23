@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\SONGJIAHAO\\source\\repos\\Solution\\Solution\\Solution.csproj": {}
+    "G:\\我的代码\\Solution\\Solution\\Solution.csproj": {}
   },
   "projects": {
-    "C:\\Users\\SONGJIAHAO\\source\\repos\\Solution\\Solution\\Solution.csproj": {
+    "G:\\我的代码\\Solution\\Solution\\Solution.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\SONGJIAHAO\\source\\repos\\Solution\\Solution\\Solution.csproj",
+        "projectUniqueName": "G:\\我的代码\\Solution\\Solution\\Solution.csproj",
         "projectName": "Solution",
-        "projectPath": "C:\\Users\\SONGJIAHAO\\source\\repos\\Solution\\Solution\\Solution.csproj",
+        "projectPath": "G:\\我的代码\\Solution\\Solution\\Solution.csproj",
         "packagesPath": "C:\\Users\\SONGJIAHAO\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\SONGJIAHAO\\source\\repos\\Solution\\Solution\\obj\\",
+        "outputPath": "G:\\我的代码\\Solution\\Solution\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\SONGJIAHAO\\AppData\\Roaming\\NuGet\\NuGet.Config",

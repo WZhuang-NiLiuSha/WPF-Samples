@@ -18,7 +18,7 @@
         </VisualBrush>
         <Style x:Key="MyButtonStyle" TargetType="{x:Type Button}">
             <Setter Property="FocusVisualStyle" Value="{x:Null}"/>
-            <Setter Property="Background" Value="#FFB2044B"/>
+            <Setter Property="Background" Value="#e74c3c"/>
             <Setter Property="BorderThickness" Value="0"/>
             <Setter Property="Foreground" Value="White"/>
             <Setter Property="HorizontalContentAlignment" Value="Center"/>
@@ -96,14 +96,14 @@
                     </Border.Effect>
                 </Border>
                 <StackPanel Margin="25,30,0,10" Grid.Row="0" VerticalAlignment="Center" Orientation="Horizontal" >
-                    <Rectangle Fill="#FFB2044B" Height="50" Width="10" HorizontalAlignment="Left"></Rectangle>
-                    <TextBlock Text="LOGIN" Foreground="#FFB2044B" VerticalAlignment="Center" FontSize="36" FontWeight="Bold" Margin="20,0"></TextBlock>
+                    <Rectangle Fill="#e74c3c" Height="50" Width="10" HorizontalAlignment="Left"></Rectangle>
+                    <TextBlock Text="LOGIN" Foreground="#e74c3c" VerticalAlignment="Center" FontSize="36" FontWeight="Bold" Margin="20,0"></TextBlock>
 
                 </StackPanel>
                 <StackPanel Margin="25" Grid.Row="1">
-                    <TextBox BorderThickness="0,0,0,2" Margin="40,10" FontSize="16" BorderBrush="#FFB2044B" Foreground="#FFB2044B" Padding="10">
+                    <TextBox BorderThickness="0,0,0,2" Margin="40,10" FontSize="16" BorderBrush="#e74c3c" Foreground="#e74c3c" Padding="10">
                     </TextBox>
-                    <PasswordBox BorderThickness="0,0,0,2" Margin="40,10" PasswordChar="*" FontSize="16" Foreground="#FFB2044B" BorderBrush="#FFB2044B" Padding="10">
+                    <PasswordBox BorderThickness="0,0,0,2" Margin="40,10" PasswordChar="*" FontSize="16" Foreground="#e74c3c" BorderBrush="#e74c3c" Padding="10">
                     </PasswordBox>
                 </StackPanel>
                 <StackPanel Grid.Row="2" Margin="25,10">
@@ -194,7 +194,7 @@
                     <TranslateTransform></TranslateTransform>
                 </TransformGroup>
             </Grid.RenderTransform>
-            <Border MouseDown="Grid_MouseDown" x:Name="borderRegister" Margin="25"  VerticalAlignment="Top" HorizontalAlignment="Right" Height="40px" Width="40px" CornerRadius="10" Background="#FFB2044B">
+            <Border MouseDown="Grid_MouseDown" x:Name="borderRegister" Margin="25"  VerticalAlignment="Top" HorizontalAlignment="Right" Height="40px" Width="40px" CornerRadius="10" Background="#e74c3c">
                 <Border.Effect>
                     <DropShadowEffect BlurRadius="20" Color="#dddddd" Opacity="1" ShadowDepth="0"></DropShadowEffect>
                 </Border.Effect>
@@ -219,7 +219,7 @@
                     </PasswordBox>
                 </StackPanel>
                 <StackPanel Grid.Row="2" Margin="25,10">
-                    <Button x:Name="buttonRegister" Margin="80,10" Height="40" Width="240" Style="{DynamicResource MyButtonStyle}" Content="GO" FontSize="18" Background="White" Foreground="#FFB2044B">
+                    <Button x:Name="buttonRegister" Margin="80,10" Height="40" Width="240" Style="{DynamicResource MyButtonStyle}" Content="GO" FontSize="18" Background="White" Foreground="#e74c3c">
                         <Button.Triggers>
                             <EventTrigger RoutedEvent="Loaded">
                                 <EventTrigger.Actions>
@@ -239,7 +239,7 @@
                 </StackPanel>
             </Grid>
             <Button x:Name="SignIn" Content="Login" Click="SignIn_Click" Width="80" Height="50" Margin="0,100"  Style="{StaticResource MyButtonStyle}" HorizontalAlignment="Right" VerticalAlignment="Top"
-                    Background="White" Foreground="#FFB2044B">
+                    Background="White" Foreground="#e74c3c">
                 <Button.RenderTransform>
                     <TransformGroup>
                         <ScaleTransform/>
@@ -294,6 +294,6 @@
             </Button>
         </Grid>
         <Button x:Name="closeBtn" Content="&#xe61b;" Style="{StaticResource MyButtonStyle}" FontFamily="fonts/#iconfont" VerticalAlignment="Top" HorizontalAlignment="Right"
-                   FontSize="20" Margin="0,60,60,0" Foreground="White" Click="Button_Click"></Button>
+                   FontSize="20" Margin="0,60,60,0" Foreground="#e74c3c" Background="Transparent" Click="Button_Click"></Button>
     </Grid>
 </Window>

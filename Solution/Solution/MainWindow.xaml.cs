@@ -1,6 +1,8 @@
 ﻿
+using System.Drawing;
 using System.Windows;
 using System.Windows.Input;
+using System.Windows.Media;
 
 namespace Solution
 {
@@ -25,6 +27,7 @@ namespace Solution
             this.gridSignUp.Visibility = Visibility.Visible;
             this.SignUp.Visibility = Visibility.Collapsed;
             this.SignIn.Visibility = Visibility.Visible;
+            this.closeBtn.Foreground = new SolidColorBrush(Colors.White);
         }
 
         private void SignIn_Click(object sender, RoutedEventArgs e)
@@ -33,6 +36,8 @@ namespace Solution
             this.gridSignUp.Visibility = Visibility.Collapsed;
             this.SignUp.Visibility = Visibility.Visible;
             this.SignIn.Visibility = Visibility.Collapsed;
+            System.Drawing.Color color = ColorTranslator.FromHtml("#e74c3c");
+            this.closeBtn.Foreground = new SolidColorBrush(System.Windows.Media.Color.FromRgb(color.R,color.G,color.B));
         }
 
         private void Button_Click(object sender, RoutedEventArgs e)
